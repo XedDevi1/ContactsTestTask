@@ -1,0 +1,75 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #F0F0F0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+
+.table th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table td {
+text-align: center;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#new-contact {
+    background-color: #98FB98;
+}
+
+.edit-contact {
+    border-radius: 20px;
+    background-color: #FFD700;
+}
+
+.delete-contact {
+    border-radius: 20px;
+    background-color: #FF6961;
+}
+
+.modal-content {
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.modal-header, .modal-footer {
+    background-color: #f8f9fa;
+}
+
+.modal-title {
+    margin: 0;
+    color: #007BFF;
+}
+
+.close {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+}

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Контакты</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Контакты</h1>
+        <button id="new-contact" class="btn btn-primary">Новый контакт</button>
+        <table id="contacts" class="table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Мобильный телефон</th>
+                    <th>Должность</th>
+                    <th>Дата рождения</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Имя</td>
+                    <td>Мобильный телефон</td>
+                    <td>Должность</td>
+                    <td>Дата рождения</td>
+                    <td>
+                        <button class="btn edit-contact">Редактировать</button>
+                        <button class="btn delete-contact">Удалить</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="contact-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Контакт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-phone">Мобильный телефон</label>
+                            <input type="tel" class="form-control" id="mobile-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="job-title">Должность</label>
+                            <input type="text" class="form-control" id="job-title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth-date">Дата рождения</label>
+                            <input type="date" class="form-control" id="birth-date" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="save-contact">Сохранить</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
